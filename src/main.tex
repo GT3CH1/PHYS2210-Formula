@@ -64,6 +64,7 @@
             r = $ radius $ \newline
             \alpha = $ acceleration $ (\frac{rad}{s^2}) \newline
             \omega = $ velocity $ (\frac{rad}{s}) \newline
+            \alpha = \frac{\Delta \omega}{\Delta t} \newline
             s = $ arc length $ \newline
             s=s_0 + v_0t + \frac{1}{2}at^2 \newline
             s = r \Delta \theta \newline
@@ -164,6 +165,31 @@
             y_{cm} = \frac{m_1y_1...(+m_2y_2)}{m_1...(+m_2)} \newline
             r_{cm} = \frac1M \sum m_{i}x_i \newline
             K_{rot} = \frac{\omega^2}{2}\sum m_i r_i^2
+            $
+        \end{fleqn}
+        \section*{Rotation of a Rigid Body}
+        \section*{Parallel-Axis Theorem}
+        \begin{fleqn}
+            $
+            I_{cm} = \frac{1}{12} ML^2 $ (if at center.) $ \newline
+            I_A = I_{cm} + Md^2 \equiv \frac13 ML^2 \newline
+            $
+        \end{fleqn}
+        \begin{fleqn}
+            $
+            K_{sys} = \frac12 L \omega^2 \newline
+            I = \sum m_{i} r_i^2, I = \int r^2 dm \newline
+            \frac 12 I \omega_1^2 + Mgy_{cm1} = \frac12 I \omega_0^2 + Mgy{cm0} \newline
+            $
+        \end{fleqn}
+        \section*{Torque}
+        \begin{fleqn}
+            $
+            t = rF \sin\varphi \newline $ (-,cw : +,ccw)$ \newline
+            d = r \sin\varphi \newline
+            \theta = \varphi - 90 \newline
+            t_g = Mgd \equiv t_g = Mgx_{cm} \newline
+            t_{net} = I\alpha \equiv (\sum m_i r_i^2)\alpha \newline
             $
         \end{fleqn}
         \section*{Misc. Equations}
