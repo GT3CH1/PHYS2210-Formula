@@ -12,7 +12,7 @@
 \usepackage[margin=0.2in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
-\renewcommand{\baselinestretch}{1}
+\renewcommand{\baselinestretch}{1.5}
 \titlespacing*{\section}{0pt}{0ex}{0ex}
 \titlespacing*{\subsection}{0pt}{0ex}{0ex}
 \begin{document}
@@ -68,7 +68,8 @@
             s = $ arc length $ \newline
             s=s_0 + v_0t + \frac{1}{2}at^2 \newline
             s = r \Delta \theta \newline
-            \theta = \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2  \newline
+            \theta = \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2  \newline $
+            \switchcolumn$\newline
             \Delta \theta = \omega_0 t + \frac{1}{2}\alpha t^2  \newline
             \Delta \theta = \frac{w^2_f - w^2_0}{2 \alpha} \newline
             v_f = r\omega \newline
@@ -84,7 +85,6 @@
             \sum F_r = ma_c = \frac{1}{2}mv^2
             $
         \end{fleqn}
-        \switchcolumn
         \section*{Work/Energy}
         \begin{fleqn}
             $
@@ -111,6 +111,7 @@
             $Impulse = $\int Fdt = J \newline
             $
         \end{fleqn}
+        \switchcolumn
         \section*{Collisions/Explosions}
         \begin{fleqn}
             General Eq. (for inelastic, share common final velocity.): \newline
@@ -145,9 +146,8 @@
             \overrightarrow{F_{net}} = \sum \overrightarrow{F_x}+\sum \overrightarrow{F_y} \newline
             a=\frac{f_{net}}{m} \newline
             \mu mg = ma \newline
-                        $
+            $
         \end{fleqn}
-        \switchcolumn
         \section*{Newton's Laws}
         \begin{fleqn}
             $
@@ -158,6 +158,8 @@
             \sum F_{m_a+m_b} = (m_a+m_b)a \newline
             $
         \end{fleqn}
+    \end{paracol}
+    \begin{paracol}{3}
         \section*{Center of Mass}
         \begin{fleqn}
             $
@@ -183,24 +185,56 @@
             I_{cyl} = \frac12 \cdot MR^2
             $
         \end{fleqn}
+        \newline
         \section*{Torque}
         \begin{fleqn}
             $
-            t = rF \sin\varphi \newline $ (-,cw : +,ccw)$ \newline
+            t = rF \sin\varphi \newline
+            t = mgx \newline
+            $ (-,cw : +,ccw)$ \newline
             d = r \sin\varphi \newline
             \theta = \varphi - 90 \newline
             t_g = Mgd \equiv t_g = Mgx_{cm} \newline
             t_{net} = I\alpha \equiv (\sum m_i r_i^2)\alpha \newline
+            \alpha = \frac{t}{I}
             $
         \end{fleqn}
         \section*{Misc. Equations}
         \begin{fleqn}
             $
             x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \newline
-            rpm -> rad \frac{rev}{min}\times \frac{2\pi rad \cdot min}{rev \cdot 60s} \newline
+            rpm -> rad = \frac{rev}{min}\times \frac{2\pi rad \cdot min}{rev \cdot 60s} \newline
             rad -> rev = \frac{rad}{2\pi}
             $
         \end{fleqn}
+        \section*{Rolling Motion}
+        \begin{fleqn}
+            $
+            x_{cm} = R\theta, v_{cm} = R\omega, a_{cm} = R\alpha \newline
+            K_{total} = \frac12 mv^2_{cm} + \frac12 I \omega^2 \newline
+            $
+        \end{fleqn}
+        \switchcolumn
+        \section*{Angular Momentum}
+        \begin{fleqn}
+            $
+            t = r \times F \newline
+            [a_2 \cdot b_3 - a_3 \cdot b_2] i \newline
+            [a_3 \cdot b_1 - a_1 \cdot b_3] j \newline
+            [a_1 \cdot b_2 - a_2 \cdot b_1] k \newline
+            $
+        \end{fleqn}
+        \section*{Simple Harmonic Motion}
+        \begin{fleqn}
+            w = angular freq., A = amplitude, equilibrium = x(0). \newline
+            $
+            x(t) = A\cos \omega t \newline
+            \omega = 2\pi f \newline
+            \phi = \omega t \newline
+            T = \frac{2 \pi }{ \omega } \newline
+            $
+        \end{fleqn}
     \end{paracol}
+
 
 \end{document}
